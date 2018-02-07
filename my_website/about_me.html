@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="about.css">
+  </head>
+  <body>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about_me.html">About Me</a></li>
+    <li><a href="pf.html">Portfolio</a></li>
+    <li><a href="tips.html">Tips and Tricks</a></li>
+    <li><a href="resume.html">My Resume</a></li>
+    <li><a href="mymusic.html">My Music</a></li>
+    </ul>
+    <h1>Welcome to My World</h1>
+    <a href="https://www.youtube.com/watch?v=Xnk4seEHmgw" target="_blank">
+    <img src="images/spicy.jpg" height="260" alt="Left:the office meme">
+    </a>
+    <a href="https://www.youtube.com/watch?v=3PNsMXe170Q" target="_blank">
+    <img src="images/golf2.jpg" height="250" alt="Center:golf picture">
+    </a>
+    <a href="https://www.youtube.com/watch?v=ghGYQD2-p48" target="_blank">
+    <img src="images/city.jpg" height="250" alt="Right:island pic">
+    </a>
+    <h3>Click on images for some interactive fun.</h3>
+    <p>
+<button id="button" onclick="location.href='index.html';">Home</button>
+<p>Click the "Disable" button to disable the "Home" button:</p>
+<button onclick="disable_button()">Disable</button>
+<p>Click the "Enable button to disable the "Home" button:
+<p>
+<button onclick="enable_button()">Enable</button>
+<script>
+function disable_button() {
+  document.getElementById("button").disabled = true;
+}
+function enable_button() {
+  document.getElementById("button").disabled = false;
+}
+</script>
+  </body>
+</html>
